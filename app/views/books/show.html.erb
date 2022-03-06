@@ -1,14 +1,16 @@
 <p class="create" ><%= flash[:success].html_safe unless flash[:success].blank? %></p>
 <p class="update" ><%= flash[:notice].html_safe unless flash[:notice].blank? %></p>
 
+
+
 <p>
   <strong>Title:</strong>
-  <%= @book3.title %>
+  <%= @book.title %>
 </p>
 
 <p>
   <strong>Body:</strong>
-  <%= @book3.body %>
+  <%= @book.body %>
 </p>
 
 <%= link_to "Edit",edit_book_path %>
